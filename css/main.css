@@ -27,6 +27,7 @@ body {
 header {
   background: #D7C3B1;
   margin: 0;
+  padding: 0;
   text-align: center;
   position: fixed;
   z-index: 10;
@@ -69,24 +70,34 @@ nav img {
 }
 
 .opening {
-  margin: 4rem;
-  display: flex;
+  padding: 4rem;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
-.sale {
+.opening img {
+  translate: 0px;
+  max-width: 500px;
+}
+
+.opening p {
+  translate: 615px -600px;
+}
+
+.information {
   margin: 4rem;
   display: flex;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
 }
 
 .product {
   margin: 4rem;
   display: flex;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 footer {
